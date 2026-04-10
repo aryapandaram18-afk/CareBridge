@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareBridge — Early Risk Intelligence for Safer Pregnancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================== LANDING PAGE (Fix A + F) ======================== -->
+<div id="page-landing" class="page active">
+  <nav class="nav">
+    <div class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      CareBridge
+    </div>
+    <div class="nav-actions">
+      <button class="btn-ghost" onclick="showAuth('login','patient')">Sign In</button>
+      <button class="btn-primary" onclick="showAuth('signup','patient')">Start Health Check</button>
+    </div>
+  </nav>
+
+  <!-- HERO (Fix A) -->
+  <section class="hero">
+    <div class="hero-badge">Early Risk Intelligence</div>
+    <h1 class="hero-title">Safer pregnancy<br><em>starts here.</em></h1>
+    <p class="hero-sub">CareBridge monitors daily symptoms, detects hidden risk patterns, and connects mothers with doctors — before emergencies happen.</p>
+    <button class="btn-hero" onclick="showAuth('signup','patient')">Start Health Check</button>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Risk Levels Detected</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Symptom Combinations</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Pattern Monitoring</span></div>
+    </div>
+  </section>
+
+  <!-- FEATURES (Fix A: only 3) -->
+  <section class="features-section">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feat-icon feat-rose">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Symptom Tracking</h3>
+        <p>Log daily health indicators in under 2 minutes. Track headaches, swelling, mood, and baby movement all in one place.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon feat-purple">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3>Risk Detection</h3>
+        <p>Analyzes symptom combinations to catch blood pressure risks, anemia, and gestational diabetes early — before they become critical.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon feat-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.73 12"/><path d="M16 2a4 4 0 0 1 4 4v4M9.17 12.83l1.83-1.83M22 6h-4M22 2l-6 6"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.73 12 19.79 19.79 0 0 1 1.67 3.35 2 2 0 0 1 3.64 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.5 5.5l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.5z"/></svg>
+        </div>
+        <h3>Emergency Support</h3>
+        <p>One-tap SOS connects you to emergency services. High-risk patterns automatically alert your assigned doctor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (Fix A) -->
+  <section class="how-section">
+    <div class="how-header">
+      <div class="how-eyebrow">How it works</div>
+      <h2 class="how-title">From symptom to safety,<br><em>in four steps.</em></h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="step-num">01</div>
+        <h3>Log Daily Symptoms</h3>
+        <p>Under 2 minutes. Track headaches, swelling, mood, baby movement.</p>
+      </div>
+      <div class="step-arrow">&#8594;</div>
+      <div class="how-step">
+        <div class="step-num">02</div>
+        <h3>Smart Risk Detection</h3>
+        <p>Analyzes symptom combinations to catch BP risks and anemia early.</p>
+      </div>
+      <div class="step-arrow">&#8594;</div>
+      <div class="how-step">
+        <div class="step-num">03</div>
+        <h3>Pattern Recognition</h3>
+        <p>Recurring symptoms trigger automatic warnings before becoming critical.</p>
+      </div>
+      <div class="step-arrow">&#8594;</div>
+      <div class="how-step">
+        <div class="step-num">04</div>
+        <h3>Doctor Connected</h3>
+        <p>High-risk cases alert your doctor automatically. SOS for instant access.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&#169; 2025 CareBridge &middot; Not a substitute for professional medical advice</p>
+  </footer>
+</div>
+
+<!-- ======================== AUTH PAGE ======================== -->
+<div id="page-auth" class="page">
+  <div class="auth-container">
+    <button class="back-btn" onclick="showPage('page-landing')">&#8592; Back</button>
+    <div class="auth-card">
+      <div class="auth-logo">CareBridge</div>
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-signup" onclick="switchAuthTab('signup')">Sign Up</button>
+        <button class="auth-tab" id="tab-login" onclick="switchAuthTab('login')">Sign In</button>
+      </div>
+      <h2 id="auth-title">Create your account</h2>
+      <p class="auth-sub" id="auth-sub">Monitor pregnancy health with CareBridge</p>
+      <div class="role-selector">
+        <button class="role-btn active" id="role-patient" onclick="switchRole('patient')">Patient</button>
+        <button class="role-btn" id="role-doctor" onclick="switchRole('doctor')">Doctor</button>
+      </div>
+      <div id="signup-fields">
+        <div class="form-group"><label>Full Name</label><input type="text" id="su-name" placeholder="Your full name" /></div>
+        <div class="form-group"><label>Email</label><input type="email" id="su-email" placeholder="you@example.com" /></div>
+        <div class="form-group"><label>Password</label><input type="password" id="su-pass" placeholder="Create a password" /></div>
+        <div class="form-group" id="signup-week-field"><label>Current Pregnancy Week</label><input type="number" id="su-week" placeholder="e.g. 28" min="1" max="40" /></div>
+        <button class="btn-submit" onclick="doSignup()">Create Account &#8594;</button>
+        <p class="auth-switch">Already have an account? <a href="#" onclick="switchAuthTab('login');return false;">Sign in</a></p>
+      </div>
+      <div id="login-fields" style="display:none">
+        <div class="form-group"><label>Email</label><input type="email" id="li-email" placeholder="your@email.com" /></div>
+        <div class="form-group"><label>Password</label><input type="password" id="li-pass" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" /></div>
+        <button class="btn-submit" onclick="doLogin()">Sign In &#8594;</button>
+        <p class="auth-switch">No account yet? <a href="#" onclick="switchAuthTab('signup');return false;">Sign up free</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== PATIENT DASHBOARD (Fix B + E) ======================== -->
+<div id="page-patient" class="page">
+  <nav class="app-nav">
+    <div class="nav-brand small">CareBridge</div>
+    <div class="nav-user">
+      <span class="user-badge patient-badge">Patient</span>
+      <span id="patient-name-nav">Sarah</span>
+      <button class="btn-sos" onclick="triggerEmergency()">SOS</button>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="week-card">
+        <div class="week-label">Pregnancy Week</div>
+        <div class="week-num" id="week-display">28</div>
+        <input type="range" min="1" max="40" value="28" class="week-slider" oninput="updateWeek(this.value)">
+      </div>
+
+      <!-- PATIENT PROFILE CARD (Fix B) -->
+      <div class="profile-card" id="patient-profile-card">
+        <div class="profile-avatar" id="profile-initials">S</div>
+        <div class="profile-info">
+          <div class="profile-name" id="profile-name-display">Sarah</div>
+          <div class="profile-detail" id="profile-detail-display">Week 28</div>
+        </div>
+        <button class="profile-edit-btn" onclick="toggleProfileEdit()">Edit</button>
+      </div>
+
+      <!-- PROFILE EDIT FORM (Fix B) -->
+      <div class="profile-edit-form hidden" id="profile-edit-form">
+        <div class="pef-group"><label>Name</label><input type="text" id="pef-name" placeholder="Full name"></div>
+        <div class="pef-group"><label>Age</label><input type="number" id="pef-age" placeholder="Age" min="15" max="55"></div>
+        <div class="pef-group"><label>Phone</label><input type="tel" id="pef-phone" placeholder="+91 XXXXX XXXXX"></div>
+        <div class="pef-group"><label>Doctor Visits</label><input type="number" id="pef-visits" placeholder="0" min="0"></div>
+        <div class="pef-group"><label>Medical History <span style="color:var(--text-muted);font-weight:400">(optional)</span></label><textarea id="pef-history" placeholder="Any pre-existing conditions..."></textarea></div>
+        <button class="pef-save-btn" onclick="saveProfile()">Save Profile</button>
+      </div>
+
+      <div class="sidebar-links">
+        <button class="sidebar-link active" onclick="switchTab('tab-log')">Daily Log</button>
+        <button class="sidebar-link" onclick="switchTab('tab-history')">History</button>
+        <button class="sidebar-link" onclick="switchTab('tab-profile')">My Profile</button>
+        <button class="sidebar-link" onclick="switchTab('tab-doctors')">Find Doctors</button>
+        <button class="sidebar-link" onclick="switchTab('tab-guidance')">Guide</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <!-- TAB: LOG -->
+      <div id="tab-log" class="tab-content active">
+        <div class="section-header">
+          <h2>Daily Symptom Log</h2>
+          <span class="date-badge" id="today-date"></span>
+        </div>
+        <div class="symptom-grid">
+          <div class="symptom-card">
+            <div class="symptom-label">Headache</div>
+            <div class="toggle-group">
+              <button class="toggle-btn active" id="headache-no" onclick="setToggle('headache','no')">No</button>
+              <button class="toggle-btn" id="headache-mild" onclick="setToggle('headache','mild')">Mild</button>
+              <button class="toggle-btn" id="headache-severe" onclick="setToggle('headache','severe')">Severe</button>
+            </div>
+          </div>
+          <div class="symptom-card">
+            <div class="symptom-label">Swelling</div>
+            <div class="toggle-group">
+              <button class="toggle-btn active" id="swelling-no" onclick="setToggle('swelling','no')">No</button>
+              <button class="toggle-btn" id="swelling-mild" onclick="setToggle('swelling','mild')">Mild</button>
+              <button class="toggle-btn" id="swelling-severe" onclick="setToggle('swelling','severe')">Severe</button>
+            </div>
+          </div>
+          <div class="symptom-card">
+            <div class="symptom-label">Dizziness / Fatigue</div>
+            <div class="toggle-group">
+              <button class="toggle-btn active" id="dizzy-no" onclick="setToggle('dizzy','no')">No</button>
+              <button class="toggle-btn" id="dizzy-yes" onclick="setToggle('dizzy','yes')">Yes</button>
+            </div>
+          </div>
+          <div class="symptom-card">
+            <div class="symptom-label">Blurred Vision</div>
+            <div class="toggle-group">
+              <button class="toggle-btn active" id="vision-no" onclick="setToggle('vision','no')">No</button>
+              <button class="toggle-btn" id="vision-yes" onclick="setToggle('vision','yes')">Yes</button>
+            </div>
+          </div>
+          <div class="symptom-card full-width">
+            <div class="symptom-label">Pain Level: <span id="pain-val">3</span>/10</div>
+            <input type="range" min="1" max="10" value="3" id="pain-slider" oninput="document.getElementById('pain-val').textContent=this.value" style="width:100%">
+            <div class="slider-labels"><span>Mild</span><span>Moderate</span><span>Severe</span></div>
+          </div>
+          <div class="symptom-card">
+            <div class="symptom-label">Mood</div>
+            <div class="toggle-group mood-group">
+              <button class="toggle-btn active" id="mood-happy" onclick="setToggle('mood','happy')">Happy</button>
+              <button class="toggle-btn" id="mood-neutral" onclick="setToggle('mood','neutral')">Okay</button>
+              <button class="toggle-btn" id="mood-stressed" onclick="setToggle('mood','stressed')">Stressed</button>
+              <button class="toggle-btn" id="mood-sad" onclick="setToggle('mood','sad')">Sad</button>
+            </div>
+          </div>
+          <div class="symptom-card">
+            <div class="symptom-label">Baby Movement</div>
+            <div class="toggle-group">
+              <button class="toggle-btn active" id="baby-normal" onclick="setToggle('baby','normal')">Normal</button>
+              <button class="toggle-btn" id="baby-low" onclick="setToggle('baby','low')">Low</button>
+              <button class="toggle-btn" id="baby-none" onclick="setToggle('baby','none')">None</button>
+            </div>
+          </div>
+          <div class="symptom-card">
+            <div class="symptom-label">Urination</div>
+            <div class="toggle-group">
+              <button class="toggle-btn active" id="urine-normal" onclick="setToggle('urine','normal')">Normal</button>
+              <button class="toggle-btn" id="urine-high" onclick="setToggle('urine','high')">Very High</button>
+              <button class="toggle-btn" id="urine-painful" onclick="setToggle('urine','painful')">Painful</button>
+            </div>
+          </div>
+        </div>
+        <div class="notes-area">
+          <label>Additional Notes (optional)</label>
+          <textarea id="notes-input" placeholder="Any other symptoms or observations..."></textarea>
+        </div>
+        <button class="btn-analyze" onclick="analyzeSymptoms()">Analyze My Symptoms &#8594;</button>
+        <div id="result-section" class="result-section hidden">
+          <div id="risk-banner" class="risk-banner">
+            <div class="risk-icon" id="risk-icon">&#10003;</div>
+            <div class="risk-text">
+              <div class="risk-level" id="risk-level">Normal</div>
+              <div class="risk-desc" id="risk-desc">All symptoms within normal range</div>
+            </div>
+          </div>
+          <div id="pattern-warning" class="pattern-warning hidden">
+            <div class="pw-icon">&#9888;</div>
+            <div class="pw-text" id="pw-text"></div>
+          </div>
+          <div class="suggestions-grid" id="suggestions-grid"></div>
+          <div id="emergency-panel" class="emergency-panel hidden">
+            <div class="ep-header">Emergency Action Required</div>
+            <div class="ep-body">
+              <p id="ep-message"></p>
+              <div class="ep-actions">
+                <a href="tel:102" class="ep-btn red">Call Emergency: 102</a>
+                <button class="ep-btn amber" onclick="triggerEmergency()">Alert Your Doctor</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: HISTORY (Fix E) -->
+      <div id="tab-history" class="tab-content">
+        <div class="section-header">
+          <h2>Symptom History</h2>
+          <button class="btn-clear" onclick="clearHistory()">Clear All</button>
+        </div>
+        <!-- TRACKING SUMMARY (Fix E) -->
+        <div class="tracking-summary" id="tracking-summary"></div>
+        <div id="history-container"><div class="empty-state">No history yet. Log your first symptoms above.</div></div>
+      </div>
+
+      <!-- TAB: PROFILE (Fix B full profile view) -->
+      <div id="tab-profile" class="tab-content">
+        <div class="section-header"><h2>My Profile</h2></div>
+        <div class="patient-profile-view" id="patient-profile-view">
+          <div class="ppv-card">
+            <div class="ppv-avatar" id="ppv-avatar">S</div>
+            <div class="ppv-details">
+              <div class="ppv-name" id="ppv-name">-</div>
+              <div class="ppv-row"><span class="ppv-label">Age</span><span class="ppv-val" id="ppv-age">-</span></div>
+              <div class="ppv-row"><span class="ppv-label">Phone</span><span class="ppv-val" id="ppv-phone">-</span></div>
+              <div class="ppv-row"><span class="ppv-label">Pregnancy Week</span><span class="ppv-val" id="ppv-week">28</span></div>
+              <div class="ppv-row"><span class="ppv-label">Doctor Visits</span><span class="ppv-val" id="ppv-visits">-</span></div>
+              <div class="ppv-row ppv-history-row"><span class="ppv-label">Medical History</span><span class="ppv-val" id="ppv-history">None recorded</span></div>
+            </div>
+          </div>
+          <div class="ppv-stats-row">
+            <div class="ppv-stat"><div class="ppvs-num" id="ppv-total-logs">0</div><div class="ppvs-label">Total Logs</div></div>
+            <div class="ppv-stat"><div class="ppvs-num" id="ppv-risk-count">0</div><div class="ppvs-label">Risk Events</div></div>
+            <div class="ppv-stat"><div class="ppvs-num" id="ppv-normal-count">0</div><div class="ppvs-label">Normal Days</div></div>
+          </div>
+          <button class="btn-analyze" onclick="switchTab('tab-log');switchSidebarLink(0)" style="max-width:200px">Log Today's Symptoms</button>
+        </div>
+      </div>
+
+      <!-- TAB: FIND DOCTORS (patient) -->
+      <div id="tab-doctors" class="tab-content">
+        <div class="section-header"><h2>Find Doctors</h2></div>
+        <div class="browse-filters">
+          <select class="filter-select" id="filter-spec" onchange="renderDoctorBrowse()">
+            <option value="">All Specializations</option>
+            <option value="Gynecologist">Gynecologist</option>
+            <option value="General Physician">General Physician</option>
+            <option value="Ayurvedic">Ayurvedic</option>
+          </select>
+          <select class="filter-select" id="filter-exp" onchange="renderDoctorBrowse()">
+            <option value="">Any Experience</option>
+            <option value="0">0–5 years</option>
+            <option value="5">5–10 years</option>
+            <option value="10">10+ years</option>
+          </select>
+        </div>
+        <div id="doctor-browse-grid" class="doctor-browse-grid"></div>
+      </div>
+
+      <!-- TAB: GUIDANCE -->
+      <div id="tab-guidance" class="tab-content">
+        <div class="section-header"><h2>Weekly Pregnancy Guide</h2></div>
+        <div id="guidance-content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== DOCTOR DASHBOARD (Fix C + D) ======================== -->
+<div id="page-doctor" class="page">
+  <nav class="app-nav doctor-nav">
+    <div class="nav-brand small">CareBridge</div>
+    <div class="nav-user">
+      <span class="user-badge doctor-badge">Doctor</span>
+      <span id="doctor-name-nav">Dr. Mehta</span>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  <div class="app-container">
+    <div class="sidebar">
+      <!-- DOCTOR PROFILE CARD (Fix C) -->
+      <div class="doctor-profile-card" id="doctor-profile-card">
+        <div class="dpc-avatar" id="dpc-initials">M</div>
+        <div class="dpc-info">
+          <div class="dpc-name" id="dpc-name">Dr. Mehta</div>
+          <div class="dpc-spec" id="dpc-spec">Gynecologist</div>
+        </div>
+      </div>
+
+      <!-- DOCTOR PROFILE DETAILS (Fix C) -->
+      <div class="doctor-profile-details" id="doctor-profile-details">
+        <div class="dpd-row"><span class="dpd-label">Experience</span><span class="dpd-val" id="dpd-exp">12 years</span></div>
+        <div class="dpd-row"><span class="dpd-label">Hospital</span><span class="dpd-val" id="dpd-hospital">Apollo Hospital</span></div>
+        <div class="dpd-row"><span class="dpd-label">Location</span><span class="dpd-val" id="dpd-location">Mumbai</span></div>
+        <div class="dpd-row"><span class="dpd-label">Contact</span><span class="dpd-val" id="dpd-contact">+91-9876543210</span></div>
+        <button class="dpd-edit-btn" onclick="toggleDoctorProfileEdit()">Edit Profile</button>
+      </div>
+
+      <!-- DOCTOR PROFILE EDIT (Fix C) -->
+      <div class="doctor-edit-form hidden" id="doctor-edit-form">
+        <div class="pef-group"><label>Name</label><input type="text" id="def-name" placeholder="Dr. Full Name"></div>
+        <div class="pef-group"><label>Specialization</label>
+          <select id="def-spec">
+            <option>Gynecologist</option>
+            <option>General Physician</option>
+            <option>Ayurvedic</option>
+          </select>
+        </div>
+        <div class="pef-group"><label>Experience (years)</label><input type="number" id="def-exp" placeholder="e.g. 12" min="0"></div>
+        <div class="pef-group"><label>Hospital / Clinic</label><input type="text" id="def-hospital" placeholder="Hospital name"></div>
+        <div class="pef-group"><label>Location</label><input type="text" id="def-location" placeholder="City"></div>
+        <div class="pef-group"><label>Contact</label><input type="tel" id="def-contact" placeholder="+91 XXXXX XXXXX"></div>
+        <button class="pef-save-btn" onclick="saveDoctorProfile()">Save Profile</button>
+      </div>
+
+      <div class="doctor-stats">
+        <div class="ds-card"><div class="ds-num" id="total-patients">0</div><div class="ds-label">Total Patients</div></div>
+        <div class="ds-card alert"><div class="ds-num" id="alert-count">0</div><div class="ds-label">Alerts</div></div>
+        <div class="ds-card"><div class="ds-num" id="normal-count">0</div><div class="ds-label">Stable</div></div>
+      </div>
+      <div class="sidebar-links">
+        <button class="sidebar-link active" onclick="switchDoctorTab('dtab-overview')">Patient Overview</button>
+        <button class="sidebar-link" onclick="switchDoctorTab('dtab-alerts')">Alerts</button>
+        <button class="sidebar-link" onclick="switchDoctorTab('dtab-chart')">Risk Chart</button>
+      </div>
+      <button class="btn-dl-all" onclick="downloadAllReports()">Download All Reports</button>
+    </div>
+
+    <div class="main-content">
+      <div id="dtab-overview" class="tab-content active">
+        <div class="section-header">
+          <h2>Patient Overview</h2>
+          <span class="refresh-info">Live</span>
+        </div>
+        <div id="patients-grid" class="patients-grid"></div>
+      </div>
+
+      <div id="dtab-alerts" class="tab-content">
+        <div class="section-header"><h2>Active Alerts</h2></div>
+        <div id="alerts-list"></div>
+      </div>
+
+      <div id="dtab-chart" class="tab-content">
+        <div class="section-header"><h2>Risk Distribution</h2></div>
+        <div class="chart-box">
+          <canvas id="riskChart" width="560" height="300"></canvas>
+          <div id="chart-legend" class="chart-legend"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOCTOR PROFILE MODAL (Fix D: click to view full profile) -->
+<div id="doctor-modal-overlay" class="modal-overlay hidden" onclick="closeDoctorModal()">
+  <div class="doctor-modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeDoctorModal()">&#215;</button>
+    <div class="dm-avatar" id="dm-avatar">M</div>
+    <div class="dm-name" id="dm-name">Dr. Name</div>
+    <div class="dm-spec" id="dm-spec">Specialization</div>
+    <div class="dm-details">
+      <div class="dm-row"><span class="dm-label">Experience</span><span id="dm-exp">-</span></div>
+      <div class="dm-row"><span class="dm-label">Hospital</span><span id="dm-hospital">-</span></div>
+      <div class="dm-row"><span class="dm-label">Location</span><span id="dm-location">-</span></div>
+      <div class="dm-row"><span class="dm-label">Contact</span><span id="dm-contact">-</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Emergency Modal -->
+<div id="emergency-modal" class="modal hidden">
+  <div class="modal-overlay" onclick="closeEmergencyModal()"></div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeEmergencyModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="emergency-icon">ð</div>
+      <h2 class="emergency-title">Emergency SOS</h2>
+      <p class="emergency-subtitle">Choose an action. Your doctor will be alerted immediately.</p>
+      
+      <div class="emergency-actions">
+        <button class="btn-emergency-primary" onclick="callAmbulance()">
+          <span class="btn-icon">ð</span>
+          <span class="btn-text">Call 102 â Ambulance</span>
+        </button>
+        
+        <button class="btn-emergency-secondary" onclick="alertDoctor()">
+          <span class="btn-icon">ð</span>
+          <span class="btn-text">Alert My Doctor Now</span>
+        </button>
+        
+        <button class="btn-emergency-cancel" onclick="closeEmergencyModal()">
+          <span class="btn-text">Cancel</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
